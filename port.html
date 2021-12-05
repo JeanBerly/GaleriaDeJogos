@@ -7,9 +7,27 @@
     <link rel="stylesheet" href="port.css">
     <title>Aba jogos</title>
     <script>
+        let navAberto = false;
+        function abrirNav(){
+            let nav = document.getElementById('navPrincipal');
+            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '1';
+            navAberto = !navAberto;
+        }
     </script>
 </head>
 <body>
+    <header class="headerTopo">
+        <h1 class="tituloPag">Game Review</h1>
+        <div onclick="abrirNav()" class="botaoNav"></div>
+    </header>
+    <div id="navPrincipal" class="abaNav">
+        <ul>
+            <li><a class="linkNav" href="#">Gris</a></li>
+            <li><a class="linkNav" href="#">Gris2</a></li>
+            <li><a class="linkNav" href="#">NFS: Carbon</a></li>
+            <li><a class="linkNav" href="#">Portal</a></li>
+        </ul>
+    </div>
     <div id="gridJogos" class="gridJogos">
         <div id="Gris"  class="previewJogo">
             <img id="imgGris" src="../ibages/gris.jpg" alt="Imagem do jogo Gris">
