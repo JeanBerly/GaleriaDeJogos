@@ -84,7 +84,7 @@ a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../ibages/gris.jpg');
+    background-image: url('ibages/gris.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../ibages/gris2.jpg');
+    background-image: url('ibages/gris2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
