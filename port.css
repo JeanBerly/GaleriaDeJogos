@@ -26,14 +26,36 @@ a{
     width: 100%;
     background-color: #e0e0e0;
 }
+.areaClickavelBotao{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    left: 10px;
+    align-self: center;
+}
 .botaoNav{
     display: block;
     position: absolute;
-    align-self: center;
     width: 50px;
-    height: 50px;
-    left: 10px;
+    height: 10px;
     background-color: black;
+}
+.botaoNav::after,
+.botaoNav::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.botaoNav::before{
+    top: -150%;
+}
+.botaoNav::after{
+    bottom: -150%;
 }
 .abaNav{
     display: block;

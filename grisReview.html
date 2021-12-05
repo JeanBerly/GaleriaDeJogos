@@ -6,8 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reviews.css">
     <title>Review de Gris</title>
+    <script>
+        let navAberto = false;
+        function abrirNav(){
+            let nav = document.getElementById('navPrincipal');
+            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '1';
+            navAberto = !navAberto;
+        }
+    </script>
 </head>
 <body>
-    
+    <header class="headerTopo">
+        <h1 class="tituloPag">Game Review</h1>
+        <div onclick="abrirNav()" class="areaClickavelBotao">
+            <div id="botaoNavPrincipal" class="botaoNav">
+            </div>
+        </div>
+    </header>
+    <div id="navPrincipal" class="abaNav">
+        <ul>
+            <li><a class="linkNav" href="#">Gris</a></li>
+            <li><a class="linkNav" href="#">Gris2</a></li>
+            <li><a class="linkNav" href="#">NFS: Carbon</a></li>
+            <li><a class="linkNav" href="#">Portal</a></li>
+        </ul>
+    </div>
+    <div class="conteudo">
+        <div class="informacoes">
+            Um jogo para todos
+        </div>
+    </div>
+    <div class="conteudo2">
+        aaa
+    </div>
 </body>
 </html>
