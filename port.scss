@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.headerTopo{
+    display: grid;
+    position: relative;
+    place-content: center;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+.areaClickavelBotao{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    left: 10px;
+    align-self: center;
+}
+.botaoNav{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.botaoNav::after,
+.botaoNav::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.botaoNav::before{
+    top: -150%;
+}
+.botaoNav::after{
+    bottom: -150%;
+}
+.abaNav{
+    display: block;
+    position: absolute;
+    width: 30%;
+    min-width: fit-content;
+    z-index: -1;
+    background-color: #e0e0e0;
+}
+.abaNav li{
+    font-size: 2rem;
+}
+.abaNav li a{
+    display: block;
+    padding: 1.5em;
+    color: black;
+}
+.abaNav li:nth-child(odd) a{
+    background-color: rgb(207, 207, 207);
+}
+.abaNav li a:hover{
+    background-color: rgb(130, 96, 255);
+}
+.gridJogos{
+    display: grid;
+    position: relative;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    top: 200px;
+    width: 80vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 5px;
+}
+.previewJogo{
+    position: relative;
+}
+.previewJogo img{
+    border-radius: 10px;
+}
+.previewDetalhes{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1px;
+    left: 0;
+    background-color: #00000070;
+    color: white;
+    border-radius: 10px;
+    font-size: 6vmin;
+    opacity: 0;
+}
+.previewJogo:hover .previewDetalhes{
+    opacity: 1;
+}
+.tituloPrev,
+.avaliacaoPrev,
+.linkPrev{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tituloPrev{
+    top: 10%;
+}
+.avaliacaoPrev{
+    color: yellow;
+    top: 45%;
+}
+.linkPrev{
+    bottom: 2%;
+}
+.linkPrev a{
+    position: relative;
+    color: white;
+}
+.linkPrev a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c7d5e0;
+    transform: scaleX(0);
+    transform: transform 250ms ease-in;
+}
+.linkPrev a:hover::after{
+    transform: scaleX(1);
+}
+@media (max-width: 950px) {
+    .gridJogos{
+        width: 80vw;
+        grid-template-columns: 1fr;
+    }
+}

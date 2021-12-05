@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.headerTopo{
+    display: grid;
+    position: relative;
+    place-content: center;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+.areaClickavelBotao{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    left: 10px;
+    align-self: center;
+}
+.botaoNav{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.botaoNav::after,
+.botaoNav::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.botaoNav::before{
+    top: -150%;
+}
+.botaoNav::after{
+    bottom: -150%;
+}
+.abaNav{
+    display: block;
+    position: absolute;
+    width: 30%;
+    min-width: fit-content;
+    z-index: -1;
+    background-color: #e0e0e0;
+    li{
+        font-size: 2rem;
+        a{
+            display: block;
+            padding: 1.5em;
+            color: black;
+        }
+    }
+}
+.abaNav li:nth-child(odd) a{
+    background-color: rgb(207, 207, 207);
+}
+.abaNav li a:hover{
+    background-color: rgb(130, 96, 255);
+}
+.conteudo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('ibages/gris.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.conteudo2{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('ibages/gris2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.informacoes{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+}
