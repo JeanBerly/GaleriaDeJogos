@@ -57,8 +57,7 @@ a {
   background-color: black;
 }
 
-.botaoNav::after,
-.botaoNav::before {
+.botaoNav::after, .botaoNav::before {
   content: '';
   display: block;
   position: absolute;
@@ -90,14 +89,14 @@ a {
   font-size: 2rem;
 }
 
+.abaNav li:nth-child(odd) a {
+  background-color: #cfcfcf;
+}
+
 .abaNav li a {
   display: block;
   padding: 1.5em;
   color: black;
-}
-
-.abaNav li:nth-child(odd) a {
-  background-color: #cfcfcf;
 }
 
 .abaNav li a:hover {
@@ -123,6 +122,14 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+}
+
+.conteudoParagrafo {
+  display: block;
+  width: 80%;
+  max-width: 80ch;
+  margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .conteudo2 {

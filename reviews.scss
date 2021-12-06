@@ -41,21 +41,20 @@ a{
     width: 50px;
     height: 10px;
     background-color: black;
-}
-.botaoNav::after,
-.botaoNav::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 10px;
-    background-color: black;
-}
-.botaoNav::before{
-    top: -150%;
-}
-.botaoNav::after{
-    bottom: -150%;
+    &::after, &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        background-color: black;
+    }
+    &::before{
+        top: -150%;
+    }
+    &::after{
+        bottom: -150%;
+    }
 }
 .abaNav{
     display: block;
@@ -65,19 +64,19 @@ a{
     z-index: -1;
     background-color: #e0e0e0;
     li{
+        &:nth-child(odd) a{
+            background-color: rgb(207, 207, 207);
+        }
         font-size: 2rem;
         a{
             display: block;
             padding: 1.5em;
             color: black;
+            &:hover{
+                background-color: rgb(130, 96, 255);
+            }
         }
     }
-}
-.abaNav li:nth-child(odd) a{
-    background-color: rgb(207, 207, 207);
-}
-.abaNav li a:hover{
-    background-color: rgb(130, 96, 255);
 }
 .conteudo{
     display: flex;
@@ -92,6 +91,13 @@ a{
     justify-content: center;
     align-items: center;
     z-index: 1;
+}
+.conteudoParagrafo{
+    display: block;
+    width: 80%;
+    max-width: 80ch;
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
 .conteudo2{
     display: block;

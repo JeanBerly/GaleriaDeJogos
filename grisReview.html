@@ -10,7 +10,7 @@
         let navAberto = false;
         function abrirNav(){
             let nav = document.getElementById('navPrincipal');
-            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '1';
+            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '999';
             navAberto = !navAberto;
         }
     </script>
@@ -32,9 +32,14 @@
         </ul>
     </div>
     <div class="conteudo">
-        <div class="informacoes">
+        <section class="informacoes">
             <h2>Uma busca pelas cores</h2>
-        </div>
+            <p class="conteudoParagrafo">Gris é um jogo no qual no começo da jogatina a sua personagem perde as cores de seu mundo,
+                e são as cores que representam a felicidade e a alegria. A grande temática do jogo é tirar a
+                personagem desse estado, que pode ser comparado à "depressão", para que ela possa recuperar
+                a sua felicidade após a morte de sua mãe.
+            </p>
+        </section>
     </div>
     <div class="conteudo2">
         aaa
