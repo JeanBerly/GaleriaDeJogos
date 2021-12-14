@@ -34,6 +34,10 @@ a {
   background-color: #e0e0e0;
 }
 
+.headerTopo .tituloPag a {
+  color: black;
+}
+
 .areaClickavelBotao {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -25,6 +25,9 @@ a{
     place-content: center;
     width: 100%;
     background-color: #e0e0e0;
+    & .tituloPag a{
+        color: black;
+    }
 }
 .areaClickavelBotao{
     display: flex;
