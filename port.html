@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="port.css">
+    <link type="text/css" rel="stylesheet" href="port.css">
+    <script type="text/javascript" src="abaNav.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Aba jogos</title>
-    <script>
-        let navAberto = false;
-        function abrirNav(){
-            let nav = document.getElementById('navPrincipal');
-            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '1';
-            navAberto = !navAberto;
-        }
-    </script>
 </head>
 <body>
     <header class="headerTopo">
@@ -26,84 +20,12 @@
     <div onmouseleave="abrirNav()" id="navPrincipal" class="abaNav">
         <ul>
             <li><a class="linkNav" href="port.html">Página Principal</a></li>
-            <li><a class="linkNav" href="grisReview.html">Gris</a></li>
+            <li><a class="linkNav" href="GrisReview.html">Gris</a></li>
             <li><a class="linkNav" href="#">NFS: Carbon</a></li>
             <li><a class="linkNav" href="#">Portal</a></li>
         </ul>
     </div>
     <div id="gridJogos" class="gridJogos">
-        <div id="Gris"  class="previewJogo">
-            <img id="imgGris" src="ibages/gris.jpg" alt="Imagem do jogo Gris">
-            <div class="previewDetalhes">
-                <div class="tituloPrev">
-                    <span>Gris</span>
-                </div>
-                <div class="avaliacaoPrev">
-                    <span class="star star1">★</span>
-                    <span class="star star2">★</span>
-                    <span class="star star3">★</span>
-                    <span class="star star4">★</span>
-                    <span class="star star5">★</span>
-                </div>
-                <div class="linkPrev">
-                    <a href="grisReview.html">Review</a>
-                </div>
-            </div>
-        </div>
-        <div id="Gris2" class="previewJogo">
-            <img  src="ibages/gris2.jpg" alt="Imagem do jogo Gris">
-            <div class="previewDetalhes">
-                <div class="tituloPrev">
-                    <span>Gris</span>
-                </div>
-                <div class="avaliacaoPrev">
-                    <span class="star star1">★</span>
-                    <span class="star star2">★</span>
-                    <span class="star star3">★</span>
-                    <span class="star star4">★</span>
-                    <span class="star star5">★</span>
-                </div>
-                <div class="linkPrev">
-                    <a href="#">Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="previewJogo">
-            <img src="ibages/carbon.jpg" alt="Imagem do jogo Need For Speed Carbon">
-            <div class="previewDetalhes">
-                <div class="tituloPrev">
-                    <span>NFS:Carbon</span>
-                </div>
-                <div class="avaliacaoPrev">
-                    <span class="star star1">★</span>
-                    <span class="star star2">★</span>
-                    <span class="star star3">★</span>
-                    <span class="star star4">★</span>
-                    <span class="star star5">★</span>
-                </div>
-                <div class="linkPrev">
-                    <a href="#">Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="previewJogo">
-            <img src="ibages/portal.jpg" alt="Imagem do jogo Portal">
-            <div class="previewDetalhes">
-                <div class="tituloPrev">
-                    <span>Portal</span>
-                </div>
-                <div class="avaliacaoPrev">
-                    <span class="star star1">★</span>
-                    <span class="star star2">★</span>
-                    <span class="star star3">★</span>
-                    <span class="star star4">★</span>
-                    <span class="star star5">★</span>
-                </div>
-                <div class="linkPrev">
-                    <a href="#">Review</a>
-                </div>
-            </div>
-        </div> 
     </div>
 </body>
 </html>
