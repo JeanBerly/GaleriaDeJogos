@@ -44,16 +44,13 @@ function capitalizeFirstLetter(string) {
 function render(){
     const grid = document.querySelector('#gridJogos');
     grid.innerHTML = avaliacoes.map((avaliacao) =>{
-        console.log(previewTemplate(avaliacao));
         return previewTemplate(avaliacao);
     }).join('');
 }
 function fillStars(){
     avaliacoes.forEach((avaliacao) =>{
         let elem = document.querySelector("#"+ capitalizeFirstLetter(avaliacao.titulo));
-        console.log(elem);
         let fis = elem.querySelector('.avaliacaoPrev').children;
-        console.log(fis);
         let aux = 0;
         while (aux < avaliacao.nota){
             fis[aux].style.color = "yellow";
