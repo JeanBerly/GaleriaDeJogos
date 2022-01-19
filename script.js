@@ -25,11 +25,11 @@ const previewTemplate = function(avaliacao){
                 <span>${avaliacao.titulo}</span>
             </div>
             <div class="avaliacaoPrev">
-                <span class="star star1">★</span>
-                <span class="star star2">★</span>
-                <span class="star star3">★</span>
-                <span class="star star4">★</span>
-                <span class="star star5">★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
             </div>
             <div class="linkPrev">
                 <a href="${avaliacao.titulo}Review.html">Review</a>
@@ -45,5 +45,16 @@ function render(){
         return previewTemplate(avaliacao);
     }).join('');
 }
+function fillStars(){
+    avaliacoes.forEach((avaliacao) =>{
+        let elem = document.querySelector("#"+avaliacao.titulo);
+        let fis = elem.querySelector('.avaliacaoPrev').children;
+        let aux = 0;
+        while (aux < avaliacao.nota){
+            fis[aux].style.color = "yellow";
+            aux++;
+        }
+    });
+}
 render();
-console.log('deu certo?');
+fillStars();
