@@ -1,10 +1,10 @@
 const avaliacoes = [
     {
-        titulo: 'Gris',
+        titulo: 'gris',
         nota: 5
     },
     {
-        titulo: 'Gris2',
+        titulo: 'gris2',
         nota: 5
     },
     {
@@ -12,17 +12,17 @@ const avaliacoes = [
         nota: 4
     },
     {
-        titulo: 'Portal',
+        titulo: 'portal',
         nota: 5
-    }
+    }   
 ]
 const previewTemplate = function(avaliacao){
     return `
-    <div id="${avaliacao.titulo}" class="previewJogo">
-        <img id="img${avaliacao.titulo}" src="ibages/${avaliacao.titulo}.jpg" alt="Imagem do jogo ${avaliacao.titulo}">
+    <div id="${capitalizeFirstLetter(avaliacao.titulo)}" class="previewJogo">
+        <img id="img${avaliacao.titulo}" src="ibages/${avaliacao.titulo}.jpg" alt="Imagem do jogo ${capitalizeFirstLetter(avaliacao.titulo)}">
         <div class="previewDetalhes">
             <div class="tituloPrev">
-                <span>${avaliacao.titulo}</span>
+                <span>${capitalizeFirstLetter(avaliacao.titulo)}</span>
             </div>
             <div class="avaliacaoPrev">
                 <span>★</span>
@@ -37,6 +37,9 @@ const previewTemplate = function(avaliacao){
         </div>
     </div>
     `;
+}
+function capitalizeFirstLetter(string) {
+    return string[0].toUpperCase() + string.slice(1);
 }
 function render(){
     const grid = document.querySelector('#gridJogos');
