@@ -1,5 +1,4 @@
 let navAberto = false;
-console.log('oi');
 function abrirNav(){
     let nav = document.getElementById('navPrincipal');
     navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '999';
