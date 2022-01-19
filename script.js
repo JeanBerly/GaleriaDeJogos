@@ -50,8 +50,10 @@ function render(){
 }
 function fillStars(){
     avaliacoes.forEach((avaliacao) =>{
-        let elem = document.querySelector("#"+capitalizeFirstLetter(avaliacao.titulo));
+        let elem = document.querySelector("#"+ capitalizeFirstLetter(avaliacao.titulo));
+        console.log(elem);
         let fis = elem.querySelector('.avaliacaoPrev').children;
+        console.log(fis);
         let aux = 0;
         while (aux < avaliacao.nota){
             fis[aux].style.color = "yellow";
