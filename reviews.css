@@ -115,7 +115,7 @@ a {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-box-pack: center;
@@ -125,6 +125,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+}
+
+#conteudo2 {
+  background-position: 80% top;
 }
 
 .conteudoParagrafo {
@@ -137,7 +141,6 @@ a {
 
 .informacoes {
   width: 100%;
-  height: 200px;
   background-color: rgba(32, 32, 32, 0.9);
   color: white;
   text-align: center;

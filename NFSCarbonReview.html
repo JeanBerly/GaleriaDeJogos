@@ -5,18 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="reviews.css">
+    <script type="text/javascript" src="abaNav.js"></script>
     <title>NFS:Carbon Review</title>
-    <script>
-        let navAberto = false;
-        function abrirNav(){
-            let nav = document.getElementById('navPrincipal');
-            navAberto ? nav.style.zIndex = '-1' : nav.style.zIndex = '999';
-            navAberto = !navAberto;
-        }
-    </script>
     <style>
         #conteudo1{
-            background-image: url('ibages/carbon.jpg');
+            background-image: url('ibages/NFScarbon.jpg');
         }
         #conteudo2{
             background-image: url('ibages/carbon2.jpg');
@@ -25,7 +18,7 @@
 </head>
 <body>
     <header class="headerTopo">
-        <h1 class="tituloPag"><a href="index.html">Gris Review</a></h1>
+        <h1 class="tituloPag"><a href="index.html">NFS:Carbon Review</a></h1>
         <div onclick="abrirNav()" class="areaClickavelBotao">
             <div id="botaoNavPrincipal" class="botaoNav">
             </div>
@@ -33,8 +26,8 @@
     </header>
     <div onmouseleave="abrirNav()" id="navPrincipal" class="abaNav">
         <ul>
-            <li><a class="linkNav" href="#">Gris</a></li>
-            <li><a class="linkNav" href="#">Gris2</a></li>
+            <li><a class="linkNav" href="index.html">Página Principal</a></li>
+            <li><a class="linkNav" href="GrisReview.html">Gris</a></li>
             <li><a class="linkNav" href="#">NFS: Carbon</a></li>
             <li><a class="linkNav" href="#">Portal</a></li>
         </ul>
