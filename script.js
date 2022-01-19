@@ -50,7 +50,7 @@ function render(){
 }
 function fillStars(){
     avaliacoes.forEach((avaliacao) =>{
-        let elem = document.querySelector("#"+avaliacao.titulo);
+        let elem = document.querySelector("#"+capitalizeFirstLetter(avaliacao.titulo));
         let fis = elem.querySelector('.avaliacaoPrev').children;
         let aux = 0;
         while (aux < avaliacao.nota){
