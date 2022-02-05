@@ -4,7 +4,7 @@ const avaliacoes = [
         nota: 5
     },
     {
-        titulo: 'gris2',
+        titulo: 'ultimate-Spiderman',
         nota: 5
     },
     {

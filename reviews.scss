@@ -26,6 +26,8 @@ a{
     width: 100%;
     background-color: #e0e0e0;
     & .tituloPag a{
+        margin-left: 50px;
+        font-size: calc(10px + 1vmax);
         color: black;
     }
 }

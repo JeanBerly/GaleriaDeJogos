@@ -35,6 +35,8 @@ a {
 }
 
 .headerTopo .tituloPag a {
+  margin-left: 50px;
+  font-size: calc(10px + 1vmax);
   color: black;
 }
 
@@ -125,10 +127,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
-}
-
-#conteudo2 {
-  background-position: 80% top;
 }
 
 .conteudoParagrafo {
